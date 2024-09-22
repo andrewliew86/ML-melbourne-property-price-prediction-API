@@ -102,11 +102,11 @@ pytest test_app.py
 
 <img src="https://github.com/andrewliew86/Melbourne-property-price-prediction-model/blob/main/images/propery_folium_map.PNG" width=70% height=70%>
 
-**Figure 3: Counts of property types, frequently used words to descrive properties and distribution of prices and built year**
+**Figure 3: Counts of property types, frequently used words to describe each property and distribution of prices and build year**
 
 <img src="https://github.com/andrewliew86/Melbourne-property-price-prediction-model/blob/main/images/fig3.png" width=70% height=70%>
 
 ## Future Improvements
 - Implement additional machine learning models for better accuracy
 - Hyperparameter tuning of models
-- Deploy the API to a cloud platform like AWS or Heroku for scaling
+- Deploy the API to a cloud platform like AWS or Heroku to improve scaling capabilities
