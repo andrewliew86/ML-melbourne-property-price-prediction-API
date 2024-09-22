@@ -35,8 +35,9 @@ The API is Dockerized, allowing easy deployment in any environment. Simply make 
    }
    ```
 
-Figure 1: Basic overview of tech stack
-![alt text](https://github.com/andrewliew86/Melbourne-property-price-prediction-model/blob/main/images/schematic.png)
+**Figure 1: Basic overview of the API**
+
+<img src="https://github.com/andrewliew86/Melbourne-property-price-prediction-model/blob/main/images/schematic.png" width=70% height=70%>
 
 ## Project Structure
 - **`propert-scraping-script.py`**: Python code for obtaining data
@@ -95,14 +96,15 @@ Run the tests using pytest to ensure everything works as expected:
 pytest test_app.py
 ```
 
-### Example results from exploratory data analysis
-Figure 2: Folium map showing locations of properties
-![alt text](https://github.com/andrewliew86/Melbourne-property-price-prediction-model/blob/main/images/propery_folium_map.PNG)
+## Example results from exploratory data analysis
 
-Figure 3: Counts of property types, frequently used words to descrive properties and distribution of prices and built year
-![alt text](https://github.com/andrewliew86/Melbourne-property-price-prediction-model/blob/main/images/fig3.png)
+**Figure 2: Folium map showing locations of properties**
 
-```
+<img src="https://github.com/andrewliew86/Melbourne-property-price-prediction-model/blob/main/images/propery_folium_map.PNG" width=70% height=70%>
+
+**Figure 3: Counts of property types, frequently used words to descrive properties and distribution of prices and built year**
+
+<img src="https://github.com/andrewliew86/Melbourne-property-price-prediction-model/blob/main/images/fig3.png" width=70% height=70%>
 
 ## Future Improvements
 - Implement additional machine learning models for better accuracy
