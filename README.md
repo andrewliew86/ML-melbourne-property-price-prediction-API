@@ -16,11 +16,11 @@ The API is Dockerized, allowing easy deployment in any environment. Simply make 
 1. **Input**: The API expects a JSON input with house features like building type, area, rooms, and garage availability. Example:
    ```json
    {
-      'building_type': 'Unit',
-      'rooms': 3,
-      'showers': 2,
-      'cars': 1,
-      'size_clean': 120
+      "building_type": "Unit",
+      "rooms": 3,
+      "showers": 2,
+      "cars": 1,
+      "size_clean": 120
    }
    ```
 
