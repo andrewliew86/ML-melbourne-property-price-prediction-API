@@ -37,7 +37,7 @@ The API is Dockerized, allowing easy deployment in any environment. Simply make 
 
 ## Project Structure
 - **`propert-scraping-script.py`**: Python code for obtaining data
-- - **`exploratory-data-analysis-script.py`**: Scripts for exploratory analysis of data (building type, price, land size, car spots etc...) extracted from a real-estate website prior to model training
+- **`exploratory-data-analysis-script.py`**: Scripts for exploratory analysis of data (building type, price, land size, car spots etc...) extracted from a real-estate website prior to model training
 - **`model-training-script.py`**: Scripts for model training
 - **`app.py`**: The main Flask app that handles the API requests and returns predictions.
 - **`model.pkl`**: The serialized Random Forest regressor model.
