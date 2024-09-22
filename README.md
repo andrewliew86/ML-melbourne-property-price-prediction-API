@@ -16,7 +16,7 @@ The API is Dockerized, allowing easy deployment in any environment. Simply make 
 1. **Input**: The API expects a JSON input with house features like building type, area, rooms, and garage availability. Example:
    ```json
    {
-     'building_type': 'Unit',
+      'building_type': 'Unit',
       'rooms': 3,
       'showers': 2,
       'cars': 1,
@@ -90,6 +90,7 @@ curl -X POST http://localhost:5000/predict \
 Run the tests using pytest to ensure everything works as expected:
 ```bash
 pytest test_app.py
+```
 ```
 
 ## Future Improvements
