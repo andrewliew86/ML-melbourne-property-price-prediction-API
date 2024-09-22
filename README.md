@@ -1,4 +1,4 @@
-# 🏠 House Price Prediction API
+# 🏠 House price prediction API
 
 This POC project is a Flask-based API that predicts property prices in Melbourne. It leverages a machine learning model from scikit-learn that is trained from recent data scraped from a real-estate website. Categorical features (like building type) are preprocessed through a pipeline. Code was based on tutorial here: https://engineering.rappi.com/serve-your-first-model-with-scikit-learn-flask-docker-df95efbbd35e. 
 
