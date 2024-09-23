@@ -10,6 +10,8 @@ from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import cross_val_score
 from sklearn.metrics import mean_absolute_error
+from sklearn.ensemble import GradientBoostingRegressor
+
 
 import joblib
 import math
@@ -46,7 +48,8 @@ models = {
     'Linear Regression': LinearRegression(),
     'Decision Tree': DecisionTreeRegressor(),
     'Random Forest': RandomForestRegressor(),
-    'Support Vector Regression': SVR()
+    'Support Vector Regression': SVR(),
+    'Gradient boosted Regression': GradientBoostingRegressor()
 }
 
 # 3-fold cross-validation with preprocessing pipeline
