@@ -5,7 +5,7 @@ This POC project is a Flask-based API that predicts property prices in Melbourne
 The API is Dockerized, allowing easy deployment in any environment. Simply make POST requests with house feature data, and the model returns the predicted price.
 
 ## Features
-- ""Property data**: Data (building type, price, land size, car spots etc...) extracted from a real-estate website
+- **Property data**: Data (building type, price, land size, car spots etc...) extracted from a real-estate website
 - **Machine Learning Model**: Uses a Random Forest regressor trained on house data
 - **Categorical Preprocessing**: Categorical columns (e.g., `building_type`) are handled via scikit-learn’s `OneHotEncoder` pipeline
 - **RESTful API**: Accepts JSON data for predictions and returns predicted house prices in real-time
@@ -13,7 +13,7 @@ The API is Dockerized, allowing easy deployment in any environment. Simply make 
 
 ## How It Works
 
-1. **Input**: The API expects a JSON input with house features like building type, area, rooms, and garage availability. Example:
+1. **Input**: The API expects a JSON input with house features like building type, size, rooms, and number of carspaces. Example:
    ```json
    {
       "building_type": "Unit",
@@ -40,9 +40,9 @@ The API is Dockerized, allowing easy deployment in any environment. Simply make 
 <img src="https://github.com/andrewliew86/Melbourne-property-price-prediction-model/blob/main/images/schematic.png" width=70% height=70%>
 
 ## Project Structure
-- **`propert-scraping-script.py`**: Python code for obtaining data
-- **`exploratory-data-analysis-script.py`**: Scripts for exploratory analysis of data (building type, price, land size, car spots etc...) extracted from a real-estate website prior to model training
-- **`model-training-script.py`**: Scripts for model training
+- **`propert-scraping-script.py`**: Script for scraping data
+- **`exploratory-data-analysis-script.py`**: Script for exploratory analysis of data (building type, price, land size, car spots etc...) extracted from a real-estate website prior to model training
+- **`model-training-script.py`**: Script for model training
 - **`app.py`**: The main Flask app that handles the API requests and returns predictions.
 - **`model.pkl`**: The serialized Random Forest regressor model.
 - **`Dockerfile`**: Docker configuration to containerize the app.
