@@ -5,7 +5,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load the model
-model = joblib.load('house_price_model.joblib')
+model = joblib.load('model/house_price_model.joblib')
 
 @app.route('/predict', methods=['POST'])
 def predict():
