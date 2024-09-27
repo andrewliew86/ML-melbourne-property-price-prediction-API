@@ -34,6 +34,24 @@ def test_predict_success(client):
     # Check if the predicted price is in the response
     assert 'predicted_price' in response_data
 
+# Check if calculations are as predicted by the model
+def test_predict_correct_response(client):
+    # Create a sample input for the /predict route
+    sample_data = {
+        'building_type': 'Unit',
+        'rooms': 3,
+        'showers': 2,
+        'cars': 1,
+        'size_clean': 120
+    }
+
+    response = client.post('/predict',
+                           data=json.dumps(sample_data),
+                           content_type='application/json')
+    response_data = json.loads(response.data)
+    # Check if the predicted price is as expected based on the current model
+    assert response_data['predicted_price'] == 989420.0
+
 # Check what happens when data are missing
 def test_predict_missing_data(client):
     # Send request with missing data to test validation (showers)
