@@ -1,0 +1,38 @@
+---
+title: "h20-ml-R"
+format: html
+editor: visual
+---
+
+Here, we are using a package called H20 to check whether an 'automated' method can train a good model.
+
+```{r}
+library(h2o)
+
+# Start the H2O cluster (locally)
+h2o.init()
+
+# Import a sample binary outcome train/test set into H2O
+train <- h2o.importFile("C:/Users/Andrew/Documents/Learning coding notes/my_work_dir/melbourne-realestate-clean_train.csv")
+test <- h2o.importFile("C:/Users/Andrew/Documents/Learning coding notes/my_work_dir/melbourne-realestate-clean_test.csv")
+
+# Identify predictors and response
+y <- "price_clean"
+x <- setdiff(names(train), y)
+
+
+# Run AutoML for 20 base models
+aml <- h2o.automl(x = x, 
+                  y = y,
+                  training_frame = train,
+                  max_models = 20,
+                  seed = 1)
+
+# View the AutoML Leaderboard
+lb <- aml@leaderboard
+print(lb, n = nrow(lb))  # Print all rows instead of default (6 rows)
+```
+
+```{r}
+print(lb)
+```
