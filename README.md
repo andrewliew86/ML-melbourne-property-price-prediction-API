@@ -7,9 +7,10 @@ This POC project is a Flask-based API that predicts property prices in Melbourne
 The API is Dockerized, allowing easy deployment in any environment. Simply make POST requests with house feature data, and the model returns the predicted price.
 
 ## Features
-- **Property data**: Data (building type, price, land size, car spots etc...) extracted from a real-estate website
-- **Machine Learning Model**: Uses a Random Forest regressor trained on house data
-- **Categorical Preprocessing**: Categorical columns (e.g., `building_type`) are handled via scikit-learn’s `OneHotEncoder` pipeline
+- **Scraped property data**: Data (building type, price, land size, car spots etc...) extracted from a real-estate website
+- **Exploratory data analysis**: Exploring number of missing values, frequently used words describing houses, feature distribution
+- **Machine learning model**: Uses a Random Forest regressor trained on house data
+- **Hyperparameter tuning**: Improving performance of models through methods like RandomizedSearchCV, H2o autoML and ensemble learning
 - **RESTful API**: Accepts JSON data for predictions and returns predicted house prices in real-time
 - **Dockerized**: Can be deployed in any Docker-supported environment
 
@@ -110,5 +111,5 @@ pytest test_app.py
 
 ## Future Improvements
 - Implement additional machine learning models for better accuracy
-- Hyperparameter tuning of models
+- More hyperparameter tuning of models
 - Deploy the API to a cloud platform like AWS or Heroku to improve scaling capabilities
